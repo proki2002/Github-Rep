@@ -3,7 +3,6 @@ from matplotlib import pyplot as plt
 import pandas as pd 
 from numpy import nan
 
-
 class W:
     def __init__(self,pomiary:list,l:int):
         self.p=np.array(pomiary)
@@ -22,9 +21,8 @@ c=[x for x in c if str(x)!='nan']
 lc=636
 lz=532
 
-
 z=W(z,lz)
-z.wykres(), z.p, z.suma
+z.wykres()
 
 c=W(c,lc)
-c.wykres(), c.p, c.suma
+c.wykres()
